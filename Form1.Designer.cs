@@ -155,6 +155,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Сложение векторов";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -164,6 +165,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Вычитание векторов";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -173,6 +175,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Скалярное произведение";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -182,6 +185,7 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "Векторное произведение";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -191,12 +195,13 @@
             this.button5.TabIndex = 15;
             this.button5.Text = "Длина вектора";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 547);
+            this.ClientSize = new System.Drawing.Size(248, 338);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -214,9 +219,12 @@
             this.Controls.Add(this.y1);
             this.Controls.Add(this.x1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 
